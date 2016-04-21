@@ -29,3 +29,6 @@ https://github.com/Prinzhorn/skrollr
 
 FitText:
 http://fittextjs.com/
+
+Unslider: 
+http://unslider.com/
