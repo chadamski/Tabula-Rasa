@@ -34,3 +34,6 @@ http://fittextjs.com/
 
 Unslider: 
 http://unslider.com/
+
+Particles: 
+https://github.com/VincentGarreau/particles.js
