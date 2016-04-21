@@ -36,4 +36,7 @@ Unslider:
 http://unslider.com/
 
 Particles: 
+
 https://github.com/VincentGarreau/particles.js
+
+http://vincentgarreau.com/particles.js/
