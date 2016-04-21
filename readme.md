@@ -2,9 +2,7 @@
 
 ####A blank, customizable WordPress theme with a great structure and lots of handy plugins
 
-Brought to you by Chadams Web Consulting.
-
-http://www.chadams.co/
+Brought to you by <a href="http://www.chadams.co/">Chadams Web Consulting.</a>
 
 Here are the tools I use most frequently to make custom themes.
 
