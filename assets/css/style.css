@@ -1,0 +1,351 @@
+/*
+$body-font: 'Chronicle Display', Helvetica, sans-serif;
+$headline-font: 'Whitney', Helvetica, sans-serif;
+*/
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@-o-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@-moz-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@-o-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@-moz-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+@-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0; }
+
+.unslider-wrap {
+  position: relative; }
+
+.unslider-wrap.unslider-carousel > li {
+  float: left; }
+
+.unslider-vertical > ul {
+  height: 100%; }
+
+.unslider-vertical li {
+  float: none;
+  width: 100%; }
+
+.unslider-fade {
+  position: relative; }
+
+.unslider-fade .unslider-wrap li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 8; }
+
+.unslider-fade .unslider-wrap li.unslider-active {
+  z-index: 10; }
+
+.unslider li, .unslider ol, .unslider ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+.unslider-arrow {
+  position: absolute;
+  left: 20px;
+  z-index: 2;
+  cursor: pointer; }
+
+.unslider-arrow.next {
+  left: auto;
+  right: 20px; }
+
+/**
+ *   Here's where everything gets included. You don't need
+ *   to change anything here, and doing so might break
+ *   stuff. Here be dragons and all that.
+ */
+/**
+ *   Default variables
+ *
+ *   While these can be set with JavaScript, it's probably
+ *   better and faster to just set them here, compile to
+ *   CSS and include that instead to use some of that
+ *   hardware-accelerated goodness.
+ */
+.unslider-nav ol {
+  list-style: none;
+  display: block;
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 40px;
+  padding: 15px;
+  width: auto;
+  max-width: 150px;
+  margin: 0 auto; }
+
+.unslider-nav ol li {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin: 5px 0 5px 0;
+  background: transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  text-indent: -999em;
+  background: grey;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-left: 15px; }
+
+.unslider-nav ol li.unslider-active {
+  background: black;
+  cursor: default; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+@font-face{
+font-family:"Avenir";
+src:url("../fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix");
+src:url("../fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix") format("eot"),url("../fonts/0078f486-8e52-42c0-ad81-3c8d3d43f48e.woff2") format("woff2"),url("../fonts/908c4810-64db-4b46-bb8e-823eb41f68c0.woff") format("woff"),url("../fonts/4577388c-510f-4366-addb-8b663bcc762a.ttf") format("truetype"),url("../fonts/b0268c31-e450-4159-bfea-e0d20e2b5c0c.svg#b0268c31-e450-4159-bfea-e0d20e2b5c0c") format("svg");
+font-weight: 200;
+}
+*/
+html {
+  font-family: "Avenir", "Helvetica Neue", "Helvetica", "Ariel", sans-serif;
+  font-size: 100%;
+  line-height: 1.2;
+  font-weight: 500;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-variant-ligatures: common-ligatures;
+  font-size: 22px; }
+  @media (max-width: 1400px) {
+    html {
+      font-size: 20px; } }
+  @media (max-width: 1280px) {
+    html {
+      font-size: 18px; } }
+  @media (max-width: 1024px) {
+    html {
+      font-size: 18px; } }
+  @media (max-width: 767px) {
+    html {
+      font-size: 14px; } }
+
+div#wrapper {
+  /*
+	@include transition($slowest ease);
+	opacity: 0;
+*/
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  max-width: 1400px;
+  height: auto;
+  min-height: 100vh; }
+
+i.icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 100% 100% !important;
+  -moz-background-size: 100% 100% !important;
+  -o-background-size: 100% 100% !important;
+  background-size: 100% 100% !important;
+  -moz-transition: 0.3s cubic-bezier(0.28, 0, 0.18, 1);
+  -o-transition: 0.3s cubic-bezier(0.28, 0, 0.18, 1);
+  -webkit-transition: 0.3s cubic-bezier(0.28, 0, 0.18, 1);
+  transition: 0.3s cubic-bezier(0.28, 0, 0.18, 1);
+  /*
+	&.fb{
+		background-image: url(../images/ui/icon-facebook-black.svg);
+	}
+	&.ig{
+		background-image: url(../images/ui/icon-instagram-black.svg);
+	}
+	&.tw{
+		background-image: url(../images/ui/icon-twitter-black.svg);
+	}
+	&.email{
+		background-image: url(../images/ui/icon-envelope-black.svg);
+	}
+	&.trip{
+		background-image: url(../images/ui/icon-tripadvisor-black.svg);
+	}
+	&.next{
+		background-image: url(../images/ui/icon-next-white.svg);
+		&.black{
+			background-image: url(../images/ui/icon-next-black.svg);
+		}
+	}
+	&.prev{
+		background-image: url(../images/ui/icon-prev-white.svg);
+	}
+*/ }
+  i.icon.smaller {
+    width: 15px;
+    height: 15px; }
+  i.icon.small {
+    width: 25px;
+    height: 25px; }
+  i.icon.large {
+    width: 90px;
+    height: 90px; }
