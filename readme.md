@@ -5,15 +5,17 @@
 
 ##UI Stuff
 
-UI Icon Set: 
-
+UI Icon Set:
 http://www.entypo.com/
 
 Favicon Generator: 
-
 http://www.favicon-generator.org/
 
 
-##JS stuff
+##JS Plugins & Stuff
 
+Waypoints:
 http://imakewebthings.com/waypoints/guides/getting-started/
+
+Cycle 2: 
+http://jquery.malsup.com/cycle2/
