@@ -1,6 +1,6 @@
 #Tabula Rasa
 
-####A blank, customizable WordPress theme with a great structure and lots of handy plugins
+####A blank, customizable, SASSy WordPress theme with a great structure and lots of handy plugins
 
 Brought to you by <a href="http://www.chadams.co/">Chadams Web Consulting.</a>
 
