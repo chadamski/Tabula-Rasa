@@ -1,4 +1,4 @@
-// Example font-face declaration
+// Font face declarations or includes
 
 /*
 @font-face{
@@ -8,3 +8,6 @@ src:url("../fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix") format("eot"
 font-weight: 200;
 }
 */
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic);

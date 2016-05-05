@@ -1,6 +1,7 @@
-$sans: 'Avenir', 'Helvetica Neue','Helvetica','Ariel', sans-serif;
+$bodyfont: 'Playfair Display', Times, serif;
+$labelfont: 'Ubuntu', Arial, sans-serif;
 html {
-	font-family: $sans;
+	font-family: $bodyfont;
 	font-size: 100%;
 	line-height: 1.2;
 	font-weight: 500;
@@ -12,25 +13,43 @@ html {
 	@include breakpoint(tablet){font-size: 18px;}
 	@include breakpoint(mobile){font-size: 14px;}
 }
-h1{
-
+h1 { font-size: 2em;}
+h2 { font-size: 1.5em;}
+h3 { font-size: 1.17em;}
+h4 { font-size: 1em;}
+h5 { font-size: 0.83em;}
+h6 { font-size: 0.75em; }
+p { 
+	line-height: 1.5;
+    margin: 0 0 1em;
 }
-h2{
-
+strong {
+	font-weight: bold;
 }
-p{
-	
+em {
+	font-style: italic;
 }
-strong{
-	
-}
-em
 a{
-
+	&:visited{
+		
+	}
 	&:hover {
 
 	}
 	&:active{
 		
+	}
+}
+code, pre {
+	font-family: monospace, serif;
+	font-size: 1em;
+}
+
+blockquote {
+	font-style: italic;
+	&:before { 
+		content: "\201C";
+		display: inline-block;
+		padding-right: .4em;
 	}
 }
