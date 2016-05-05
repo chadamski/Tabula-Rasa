@@ -30,6 +30,8 @@ em {
 	font-style: italic;
 }
 a{
+	display: inline-block;
+	position: relative;
 	&:visited{
 		
 	}
@@ -39,10 +41,27 @@ a{
 	&:active{
 		
 	}
+	&:after {    
+		background: none repeat scroll 0 0 transparent;
+		bottom: -5px;
+		content: "";
+		display: block;
+		height: 2px;
+		left: 50%;
+		position: absolute;
+		background: black;
+		transition: width 0.3s ease 0s, left 0.3s ease 0s;
+		width: 0;
+	}
+	&:hover:after { 
+		width: 100%; 
+		left: 0; 
+	}
 }
-code, pre {
+code, pre, tt {
 	font-family: monospace, serif;
 	font-size: 1em;
+	margin: 1.5em .5em;
 }
 
 blockquote {

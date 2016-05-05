@@ -6,7 +6,7 @@
 	<nav role="main">
 		<?php 
 			wp_nav_menu( array(
-			    'menu' => 'Header Main'
+			    'menu' => 'Main'
 			) );
 		?>
 	</nav>
