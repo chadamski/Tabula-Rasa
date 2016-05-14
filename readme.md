@@ -51,7 +51,7 @@ I highly recommend:
 
 Advanced Custom Fields
 
-Advanced Custom Gallery
+Advanced Custom Fields Gallery
 
 Advanced Custom Fields Repeater Field Add-On
 
