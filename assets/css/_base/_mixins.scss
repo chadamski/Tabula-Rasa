@@ -63,6 +63,12 @@
 	-webkit-transform: $transforms;
           transform: $transforms;
 }
+// calc
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
 // Filters
 // grayscale      ex: filter: grayscale(100%);
 // sepia          ex: filter: sepia(100%);
