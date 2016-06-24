@@ -3,10 +3,8 @@ body{
 }
 
 div#wrapper {
-/*
 	@include transition($slowest ease);
 	opacity: 0;
-*/
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
@@ -14,10 +12,10 @@ div#wrapper {
 	height: auto;
 	min-height: 100vh;
 }
-\
+
 .loaded {
 	div#wrapper {
-// 		opacity: 1;
+		opacity: 1;
 	}
 
 }
