@@ -2,7 +2,7 @@
 	include(locate_template('variables.php'));
 ?>
 <header class="<?php echo $listClass ?>">
-	<a href="/" id="logo"><span>Company Name</span></a>
+	<a href="<?php site_url(); ?>" id="logo"><span>Company Name</span></a>
 	<nav role="main">
 		<?php 
 			wp_nav_menu( array(
