@@ -6,7 +6,6 @@ div#wrapper {
 	@include transition($slowest ease);
 	opacity: 0;
 	margin: 0 auto;
-	overflow: hidden;
 	position: relative;
 	max-width: $maxW;
 	height: auto;
