@@ -49,7 +49,7 @@ http://threejs.org/
 
 I highly recommend: 
 
-Advanced Custom Fields
+Advanced Custom Fields Pro
 
 Advanced Custom Fields Gallery
 
