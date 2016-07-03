@@ -51,10 +51,6 @@ I highly recommend:
 
 Advanced Custom Fields Pro
 
-Advanced Custom Fields Gallery
-
-Advanced Custom Fields Repeater Field Add-On
-
 Advanced Custom Fields Options Page
 
 
