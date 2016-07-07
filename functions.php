@@ -82,6 +82,7 @@ function register_team() {
 }
 add_action( 'init', 'register_team', 0 );
 
+
 // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
 function tabularasa_pagination()
 {
@@ -95,5 +96,14 @@ function tabularasa_pagination()
     ));
 }
 add_action('init', 'tabularasa_pagination');
+
+
+//ACF Pro Options Page
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
 
 ?>
