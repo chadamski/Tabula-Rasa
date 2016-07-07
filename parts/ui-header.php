@@ -1,8 +1,6 @@
-<?php 
-	include(locate_template('variables.php'));
-?>
+<?php include(locate_template('variables.php')); ?>
 <header class="<?php echo $listClass ?>">
-	<a href="<?php site_url(); ?>" id="logo"><span><?php bloginfo( 'name' ); ?></span></a>
+	<a href="<?php site_url(); ?>" id="logo"><?php bloginfo( 'name' ); ?></a>
 	<nav role="main">
 		<?php 
 			wp_nav_menu( array(
@@ -11,6 +9,3 @@
 		?>
 	</nav>
 </header>
-<section id="hero">
-
-</section>
