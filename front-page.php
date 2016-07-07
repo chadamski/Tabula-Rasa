@@ -3,5 +3,4 @@
 	<section role="main">
 		<?php get_template_part('loop'); ?>
 	</section>
-	<?php get_footer(); 
-?>
+<?php get_footer(); ?>
