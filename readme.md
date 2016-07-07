@@ -51,6 +51,10 @@ I highly recommend:
 
 Advanced Custom Fields Pro
 
+Contact Form 7
+
+Contact Form DB
+
 ACF Pro Options Page Snippet: 
 
 ``
