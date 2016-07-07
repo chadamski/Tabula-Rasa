@@ -51,16 +51,12 @@ I highly recommend:
 
 Advanced Custom Fields Pro
 
-Advanced Custom Fields Options Page
+ACF Pro Options Page Snippet: 
 
-
-Repeater Field snippet:
-
-``<?php
-	if( have_rows('repeater_field_name') ):
-		while ( have_rows('repeater_field_name') ) : the_row();
-			the_sub_field('sub_field_name');
-		endwhile;
-	else :
-	endif;
-?>``
+``
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
+``
