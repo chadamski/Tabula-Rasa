@@ -3332,10 +3332,11 @@ i.icon {
     height: 90px; }
 
 header a#logo {
+  display: block;
   width: 300px;
-  height: auto;
+  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background: url("../images/ui/logo.svg");
+  background-image: url("../images/ui/logo.svg");
   text-indent: -9999px; }
