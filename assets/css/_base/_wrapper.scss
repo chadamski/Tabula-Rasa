@@ -7,7 +7,7 @@ div#wrapper {
 	opacity: 0;
 	margin: 0 auto;
 	position: relative;
-	max-width: $maxW;
+// 	max-width: $maxW;
 	height: auto;
 	min-height: 100vh;
 }
@@ -16,5 +16,4 @@ div#wrapper {
 	div#wrapper {
 		opacity: 1;
 	}
-
 }
