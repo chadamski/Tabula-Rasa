@@ -64,3 +64,7 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 ``
+
+For calendering, check out the WP Events Manager plugin.
+
+https://wordpress.org/plugins/events-manager/
