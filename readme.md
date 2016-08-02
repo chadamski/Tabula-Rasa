@@ -68,3 +68,11 @@ if( function_exists('acf_add_options_page') ) {
 For calendering, check out the WP Events Manager plugin.
 
 https://wordpress.org/plugins/events-manager/
+
+
+
+If you gotta test your local site on a real device, try the combo of ngrok + WP-Ngrok-Local
+
+https://ngrok.com/
+
+https://github.com/jonathanbardo/WP-Ngrok-Local
