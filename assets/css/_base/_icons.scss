@@ -7,23 +7,29 @@ i.icon{
 	background-position: center center;
 	@include background-size(100% 100%);
 	@include transition($slower $ease);
-
-// 	example icons format
-/*
 	&.fb{
 		background-image: url(../images/ui/icon-facebook-black.svg);
+		&.white{
+			background-image: url(../images/ui/icon-facebook-white.svg);
+		}
 	}
 	&.ig{
 		background-image: url(../images/ui/icon-instagram-black.svg);
+		&.white{
+			background-image: url(../images/ui/icon-instagram-white.svg);
+		}
 	}
 	&.tw{
 		background-image: url(../images/ui/icon-twitter-black.svg);
+		&.white{
+			background-image: url(../images/ui/icon-twitter-white.svg);
+		}
 	}
 	&.email{
 		background-image: url(../images/ui/icon-envelope-black.svg);
-	}
-	&.trip{
-		background-image: url(../images/ui/icon-tripadvisor-black.svg);
+		&.white{
+			background-image: url(../images/ui/icon-facebook-white.svg);
+		}
 	}
 	&.next{
 		background-image: url(../images/ui/icon-next-white.svg);
@@ -34,7 +40,6 @@ i.icon{
 	&.prev{
 		background-image: url(../images/ui/icon-prev-white.svg);
 	}
-*/
 
 	&.smaller{
 		width: 15px;

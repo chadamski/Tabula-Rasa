@@ -3293,33 +3293,29 @@ i.icon {
   -moz-transition: 0.3s cubic-bezier(0.28, 0, 0.18, 1);
   -o-transition: 0.3s cubic-bezier(0.28, 0, 0.18, 1);
   -webkit-transition: 0.3s cubic-bezier(0.28, 0, 0.18, 1);
-  transition: 0.3s cubic-bezier(0.28, 0, 0.18, 1);
-  /*
-	&.fb{
-		background-image: url(../images/ui/icon-facebook-black.svg);
-	}
-	&.ig{
-		background-image: url(../images/ui/icon-instagram-black.svg);
-	}
-	&.tw{
-		background-image: url(../images/ui/icon-twitter-black.svg);
-	}
-	&.email{
-		background-image: url(../images/ui/icon-envelope-black.svg);
-	}
-	&.trip{
-		background-image: url(../images/ui/icon-tripadvisor-black.svg);
-	}
-	&.next{
-		background-image: url(../images/ui/icon-next-white.svg);
-		&.black{
-			background-image: url(../images/ui/icon-next-black.svg);
-		}
-	}
-	&.prev{
-		background-image: url(../images/ui/icon-prev-white.svg);
-	}
-*/ }
+  transition: 0.3s cubic-bezier(0.28, 0, 0.18, 1); }
+  i.icon.fb {
+    background-image: url(../images/ui/icon-facebook-black.svg); }
+    i.icon.fb.white {
+      background-image: url(../images/ui/icon-facebook-white.svg); }
+  i.icon.ig {
+    background-image: url(../images/ui/icon-instagram-black.svg); }
+    i.icon.ig.white {
+      background-image: url(../images/ui/icon-instagram-white.svg); }
+  i.icon.tw {
+    background-image: url(../images/ui/icon-twitter-black.svg); }
+    i.icon.tw.white {
+      background-image: url(../images/ui/icon-twitter-white.svg); }
+  i.icon.email {
+    background-image: url(../images/ui/icon-envelope-black.svg); }
+    i.icon.email.white {
+      background-image: url(../images/ui/icon-facebook-white.svg); }
+  i.icon.next {
+    background-image: url(../images/ui/icon-next-white.svg); }
+    i.icon.next.black {
+      background-image: url(../images/ui/icon-next-black.svg); }
+  i.icon.prev {
+    background-image: url(../images/ui/icon-prev-white.svg); }
   i.icon.smaller {
     width: 15px;
     height: 15px; }
