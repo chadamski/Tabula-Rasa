@@ -3,7 +3,7 @@
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 function my_jquery_enqueue() {
    wp_deregister_script('jquery');
-   wp_register_script('jquery', get_template_directory_uri(). "/assets/js/vendor/jquery-3.1.0.min.js", false, null);
+   wp_register_script('jquery', get_template_directory_uri(). "/assets/js/vendor/jquery-2.2.4.min.js", false, null);
    wp_register_script('base', get_template_directory_uri(). "/assets/js/base.js", false, null);
    wp_register_script('plugins', get_template_directory_uri(). "/assets/js/plugins.js", false, null);
    wp_enqueue_script('jquery');
