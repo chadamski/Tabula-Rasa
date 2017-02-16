@@ -17,6 +17,11 @@ $ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
 $ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
 $ease-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
+.cf{
+	overflow: auto;
+	zoom: 1;
+}
+
 @include keyframes(fadeIn) {
 	0% {
 		opacity: 0;

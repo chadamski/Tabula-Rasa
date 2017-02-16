@@ -2969,6 +2969,10 @@ table {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+.cf {
+  overflow: auto;
+  zoom: 1; }
+
 @-o-keyframes fadeIn {
   0% {
     opacity: 0; }
