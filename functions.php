@@ -42,6 +42,7 @@ remove_action( 'admin_print_scripts','print_emoji_detection_script');
 \*------------------------------------*/
 
 
+// Team CPT
 function register_team() {
 	$labels = array(
 		'name'                  => _x( 'Team', 'Post Type General Name', 'text_domain' ),
@@ -74,7 +75,7 @@ function register_team() {
 		'label'                 => __( 'Team', 'text_domain' ),
 		'description'           => __( 'The Team', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'page-attributes',),
+		'supports'              => array( 'title', 'page-attributes'),
 		'hierarchical'          => true,
 		'public'                => false,
 		'show_ui'               => true,
@@ -84,15 +85,54 @@ function register_team() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => false,		
+		'has_archive'           => 'team',		
 		'exclude_from_search'   => true,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'rewrite' => array( 'slug' => 'team', 'with_front' => true ),
 	);
+
 	register_post_type( 'team', $args );
 }
 add_action( 'init', 'register_team', 0 );
+// Team Taxonomy
+function team_type_tax() {
+	$labels = array(
+		'name'                       => _x( 'Departments', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Department', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Departments', 'text_domain' ),
+		'all_items'                  => __( 'All Department Types', 'text_domain' ),
+		'parent_item'                => __( 'Parent Department Type', 'text_domain' ),
+		'parent_item_colon'          => __( 'Parent Department Type:', 'text_domain' ),
+		'new_item_name'              => __( 'New Department Type Name', 'text_domain' ),
+		'add_new_item'               => __( 'Add New Department Type', 'text_domain' ),
+		'edit_item'                  => __( 'Edit Department Type', 'text_domain' ),
+		'update_item'                => __( 'Update Department Type', 'text_domain' ),
+		'view_item'                  => __( 'View Department Type', 'text_domain' ),
+		'separate_items_with_commas' => __( 'Separate Department Types with commas', 'text_domain' ),
+		'add_or_remove_items'        => __( 'Add or remove department types', 'text_domain' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'text_domain' ),
+		'popular_items'              => __( 'Popular Department Types', 'text_domain' ),
+		'search_items'               => __( 'Search Department Types', 'text_domain' ),
+		'not_found'                  => __( 'Not Found', 'text_domain' ),
+		'no_terms'                   => __( 'No Department Types', 'text_domain' ),
+		'items_list'                 => __( 'Department Types list', 'text_domain' ),
+		'items_list_navigation'      => __( 'Department Types list navigation', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => false,
+		'show_tagcloud'              => false,
+		'rewrite' => array( 'slug' => 'department', 'with_front' => true ),
+	);
+	register_taxonomy( 'team_type', array( 'team' ), $args );
 
+}
+add_action( 'init', 'team_type_tax', 0 );
 
 // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
 function tabularasa_pagination()
