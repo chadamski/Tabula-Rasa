@@ -3241,7 +3241,9 @@ em {
 
 a {
   display: inline-block;
-  position: relative; }
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1); }
   a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: -5px;
