@@ -1,12 +1,36 @@
 header{
 	a#logo{
-		display: block;
-		width: 300px; 
-		height: 200px;
+		margin-top: 18px;
+		vertical-align: top;
+		display: inline-block;
+		margin-left: 10px;
+		width: 200px; 
+		height: 30px;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-image: url("../images/ui/logo.svg");
 		text-indent: -9999px;
+	}
+	nav[role=main]{
+		ul.menu{
+			ul.sub-menu{
+				li{
+					display: none;
+				}
+			}
+			& > li{
+				display: inline-block;
+				&.menu-item-has-children{
+					&:hover{
+						ul.sub-menu{
+							li{
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

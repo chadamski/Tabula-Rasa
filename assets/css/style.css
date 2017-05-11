@@ -3286,11 +3286,22 @@ div#wrapper {
   opacity: 1; }
 
 header a#logo {
-  display: block;
-  width: 300px;
-  height: 200px;
+  margin-top: 18px;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 10px;
+  width: 200px;
+  height: 30px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../images/ui/logo.svg");
   text-indent: -9999px; }
+
+header nav[role=main] ul.menu ul.sub-menu li {
+  display: none; }
+
+header nav[role=main] ul.menu > li {
+  display: inline-block; }
+  header nav[role=main] ul.menu > li.menu-item-has-children:hover ul.sub-menu li {
+    display: block; }
