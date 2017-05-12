@@ -30,7 +30,7 @@ em {
 	font-style: italic;
 }
 a{
-	display: inline-block;
+// 	display: inline-block;
 	position: relative;
 	-webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1.0, 1.0);
@@ -43,6 +43,7 @@ a{
 	&:active{
 		
 	}
+/*
 	&:after {    
 		background: none repeat scroll 0 0 transparent;
 		bottom: -5px;
@@ -59,6 +60,7 @@ a{
 		width: 100%; 
 		left: 0; 
 	}
+*/
 }
 code, pre, tt {
 	font-family: monospace, serif;
