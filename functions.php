@@ -75,7 +75,7 @@ function register_team() {
 		'label'                 => __( 'Team', 'text_domain' ),
 		'description'           => __( 'The Team', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'page-attributes'),
+		'supports'              => array( 'title', 'page-attributes','editor','thumbnail'),
 		'hierarchical'          => true,
 		'public'                => true,
 		'show_ui'               => true,
@@ -147,6 +147,29 @@ function tabularasa_pagination()
     ));
 }
 add_action('init', 'tabularasa_pagination');
+
+
+// Example Pre-post-get functions
+/*
+// Alter query for portfolio taxonomies 
+add_action('pre_get_posts','tax_alter_query');
+function tax_alter_query($query){
+	if( $query->is_main_query() && is_tax() && !is_admin() ){
+		$query->set( 'post_type', 'project' );
+		$query->set('posts_per_page', 6);
+		$query->set('order','ASC');
+		$query->set('orderby','title');
+	}
+}
+
+// Alter query for news archives
+add_action('pre_get_posts','news_alter_query');
+function news_alter_query($query){
+	if( $query->is_main_query() && is_home() && !is_admin() ){
+		$query->set('posts_per_page', 3);
+	}
+}
+*/
 
 
 //ACF Pro Options Page

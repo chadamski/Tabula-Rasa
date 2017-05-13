@@ -3212,26 +3212,27 @@ html {
       font-size: 14px; } }
 
 h1 {
-  font-size: 2em; }
+  font-size: 2rem; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 1.5rem; }
 
 h3 {
-  font-size: 1.17em; }
+  font-size: 1.17rem; }
 
 h4 {
-  font-size: 1em; }
+  font-size: 1rem; }
 
 h5 {
-  font-size: 0.83em; }
+  font-size: 0.83rem; }
 
 h6 {
-  font-size: 0.75em; }
+  font-size: 0.75rem; }
 
 p {
-  line-height: 1.5;
-  margin: 0 0 1em; }
+  line-height: 1.5rem;
+  margin: 0 0 1rem;
+  font-size: .9rem; }
 
 strong {
   font-weight: bold; }
@@ -3295,17 +3296,20 @@ header {
   height: 4rem;
   background-color: #ffffff; }
   header a#logo {
-    margin-top: 18px;
+    position: absolute;
+    left: 15px;
     vertical-align: top;
-    display: inline-block;
-    margin-left: 10px;
-    width: 200px;
-    height: 30px;
-    background-size: cover;
+    display: block;
+    padding: 0;
+    margin: 0;
+    background-size: 75%;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url("../images/ui/logo.svg");
     text-indent: -9999px; }
+    header a#logo h1 {
+      height: 4rem;
+      width: 200px; }
   header nav[role=main] {
     position: relative;
     text-align: center;
