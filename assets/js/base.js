@@ -1,6 +1,6 @@
 // site scripts
 function init(){	
-	$('.stretched').anystretch();	
+
 	$('body').addClass('complete');
 /*
 	var waypoint = new Waypoint({
