@@ -25,6 +25,41 @@ add_filter('the_generator', 'remove_version');
 //Featured Image Support
 add_theme_support( 'post-thumbnails' ); 
 
+// custom login Logo
+/*
+function my_custom_login_logo() {
+    echo '<style type="text/css">
+    body{background-color:white;}
+		.login form {
+			background:none;
+			-webkit-box-shadow:none;
+			box-shadow:none;	
+		}
+		#login{
+			padding: 100px 0px 0px;
+		}
+		.login #login_error{
+			-webkit-box-shadow:none;
+			box-shadow:none;
+			text-align: center;
+			background-color: #eeeeee;
+		}
+		#login_error, .login .message{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			text-align: center;
+			background-color: #eeeeee;
+			-webkit-box-shadow:none;
+			box-shadow:none;
+		}  
+		h1 a { background-image:url('.get_bloginfo('template_directory').'/assets/images/ui/logo.png) !important; background-size:107px 115px !important; width:107px!important; height:115px!important; }
+    </style>';
+}
+add_action('login_head', 'my_custom_login_logo');
+*/
+
 // no emoji's Please :(
 function disable_emoji_dequeue_script() {
 	wp_dequeue_script( 'emoji' );
