@@ -123,6 +123,12 @@
 	}
 }
 //Mixin
+
+@mixin coverphoto{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
 @mixin keyframes($name) {
   @-moz-keyframes #{$name}    { @content; }
   @-webkit-keyframes #{$name} { @content; }

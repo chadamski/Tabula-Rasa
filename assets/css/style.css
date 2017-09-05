@@ -3200,10 +3200,12 @@ font-weight: 200;
 html {
   font-family: "Playfair Display", Times, serif;
   font-size: 100%;
-  line-height: 1.2;
-  font-weight: 500;
-  -webkit-font-smoothing: subpixel-antialiased;
+  line-height: 1.5rem;
+  font-weight: 400;
   font-variant-ligatures: common-ligatures;
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased !important;
+  font-smoothing: antialiased !important;
   font-size: 22px; }
   @media (max-width: 1400px) {
     html {
@@ -3216,7 +3218,7 @@ html {
       font-size: 18px; } }
   @media (max-width: 767px) {
     html {
-      font-size: 14px; } }
+      font-size: 16px; } }
 
 h1 {
   font-size: 2rem; }
@@ -3238,8 +3240,22 @@ h6 {
 
 p {
   line-height: 1.5rem;
-  margin: 0 0 1rem;
-  font-size: .9rem; }
+  margin: 0 0 1rem 0;
+  font-size: .85rem; }
+
+ol, ul {
+  margin-left: 15px;
+  text-align: left; }
+  ol li, ul li {
+    line-height: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    font-size: .85rem; }
+
+ol {
+  list-style: decimal; }
+
+ul {
+  list-style: disc; }
 
 strong {
   font-weight: bold; }
@@ -3248,6 +3264,7 @@ em {
   font-style: italic; }
 
 a {
+  display: inline-block;
   position: relative;
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1, 1);
@@ -3269,11 +3286,16 @@ a {
 		left: 0; 
 	}
 */ }
+  a:hover {
+    opacity: .8; }
 
 code, pre, tt {
   font-family: monospace, serif;
   font-size: 1em;
-  margin: 1.5em 0.5em; }
+  overflow-x: scroll;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 30px 0;
+  padding: 15px; }
 
 blockquote {
   font-style: italic; }
