@@ -8,6 +8,7 @@
 			) );
 		?>
 	</nav>
+<!--
 	<div class="social">
 		<span class="connect">Connect</span>
 		<?php if( get_field('facebook_link','options') ): ?>
@@ -31,4 +32,5 @@
 			</svg></a>
 		<?php endif; ?>
 	</div>
+-->
 </header>

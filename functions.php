@@ -210,9 +210,9 @@ function news_alter_query($query){
 //ACF Pro Options Page
 
 if( function_exists('acf_add_options_page') ) {
-	
 	acf_add_options_page();
-	
 }
+// ACF Pro turn off hiding WP custom fields
+add_filter('acf/settings/remove_wp_meta_box', '__return_false');
 
 ?>

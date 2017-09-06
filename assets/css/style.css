@@ -3348,27 +3348,21 @@ header {
       width: 100%;
       top: 50%;
       transform: translateY(-50%); }
-    header nav[role=main] ul.menu ul.sub-menu {
-      position: absolute;
-      text-align: left; }
-      header nav[role=main] ul.menu ul.sub-menu li {
-        display: none;
-        padding: 10px 20px 10px 0; }
-      header nav[role=main] ul.menu ul.sub-menu:hover {
-        display: block; }
-    header nav[role=main] ul.menu > li {
-      display: inline-block;
-      position: relative;
-      padding: 2rem 10px;
-      margin-top: 1.8rem; }
-      header nav[role=main] ul.menu > li.menu-item-has-children:hover ul.sub-menu {
-        top: 4rem;
-        background-color: #ffffff; }
-        header nav[role=main] ul.menu > li.menu-item-has-children:hover ul.sub-menu li {
-          display: block;
-          width: 100%;
-          background-color: #ffffff;
-          padding: 20px; }
+    header nav[role=main] ul.menu {
+      list-style: none;
+      padding-left: 0; }
+      header nav[role=main] ul.menu > li {
+        display: inline-block;
+        position: relative;
+        padding: 5px; }
+        header nav[role=main] ul.menu > li ul.sub-menu {
+          list-style: none;
+          position: absolute;
+          max-height: 0;
+          overflow: hidden;
+          padding-left: 0; }
+          header nav[role=main] ul.menu > li ul.sub-menu > li > ul.sub-menu {
+            position: relative; }
   header .social {
     position: absolute;
     right: 0; }
