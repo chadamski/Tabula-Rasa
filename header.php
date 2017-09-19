@@ -31,7 +31,8 @@ echo '<head>';
 	echo '<body ';
 	body_class();
 	echo '>';
+	include(locate_template('parts/icon-spritesheet.svg'));
 	echo '<div id="wrapper">';
 	include(locate_template('parts/ui-header.php'));
-	include(locate_template('parts/icon-spritesheet.svg'));
+	
 ?>
