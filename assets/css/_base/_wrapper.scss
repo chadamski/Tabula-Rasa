@@ -2,11 +2,15 @@ div#wrapper {
 	@include transition($slowest ease);
 	opacity: 0;
 	margin: 0 auto;
+	height: 100vh;
+	overflow: auto;
 	position: relative;
-	height: auto;
-	min-height: 100vh;
-	position: relative;
-	min-height: 100%;
+}
+section[role=main]{
+	margin-top: 4.5rem;
+	&.banner{
+		margin-top: calc(4.5rem + 39px);
+	}
 }
 .no-scroll{
 	overflow: hidden!important;

@@ -1,36 +1,29 @@
 <?php include(locate_template('variables.php')); ?>
-<header class="<?php echo $listClass ?>">
+<?php if( get_field('sitewide_banner_text','options') ): ?>
+	<div class="global-announcement">
+		<?php if( get_field('sitewide_banner_link','options') ): ?>
+			<a href="<?php the_field('sitewide_banner_link','options'); ?>">
+		<?php endif; ?>
+			<p><?php the_field('sitewide_banner_text','options'); ?></p>
+		<?php if( get_field('sitewide_banner_link','options') ): ?>
+			</a>
+		<?php endif; ?>
+	</div>
+<?php endif; ?>
+<header class="<?php echo $listClass ?> <?php if( get_field('sitewide_banner_text','options') ): ?>banner<?php endif; ?>">
 	<a href="<?php echo site_url(); ?>" id="logo"><h1><?php bloginfo( 'name' ); ?></h1></a>
-	<nav role="main">
+	<nav class="main">
 		<?php 
 			wp_nav_menu( array(
 			    'menu' => 'Main'
 			) );
 		?>
 	</nav>
-<!--
-	<div class="social">
-		<span class="connect">Connect</span>
-		<?php if( get_field('facebook_link','options') ): ?>
-			<a href="<?php the_field('facebook_link','options'); ?>" target="_blank"><svg class="icon facebook">
-			    <use xlink:href="#facebook"/>
-			</svg></a>
-		<?php endif; ?>
-		<?php if( get_field('twitter_link','options') ): ?>
-			<a href="<?php the_field('twitter_link','options'); ?>" target="_blank"><svg class="icon twitter">
-			    <use xlink:href="#twitter"/>
-			</svg></a>
-		<?php endif; ?>
-		<?php if( get_field('linkedin_link','options') ): ?>
-			<a href="<?php the_field('linkedin_link','options'); ?>" target="_blank"><svg class="icon linkedin">
-			    <use xlink:href="#linkedin"/>
-			</svg></a>
-		<?php endif; ?>
-		<?php if( get_field('youtube_link','options') ): ?>
-			<a href="<?php the_field('youtube_link','options'); ?>" target="_blank"><svg class="icon youtube">
-			    <use xlink:href="#youtube-2"/>
-			</svg></a>
-		<?php endif; ?>
-	</div>
--->
+	<nav class="shop">
+		<?php 
+			wp_nav_menu( array(
+			    'menu' => 'Store Menu'
+			) );
+		?>
+	</nav>
 </header>
