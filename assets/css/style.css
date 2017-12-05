@@ -3253,10 +3253,16 @@ src:url("../fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix") format("eot"
 font-weight: 200;
 }
 */
+/*
+$condensed: 'Open Sans Condensed', sans-serif;
+$links: "Champion Lightwt A", "Champion Lightwt B", Arial, sans-serif;
+$caps: "Gotham A", "Gotham B", Arial, sans-serif;
+$book: "Gotham A", "Gotham B", Arial, sans-serif;
+*/
 html {
-  font-family: "Playfair Display", Times, serif;
+  font-family: "Simplon", "Ubuntu", Arial, sans-serif;
   font-size: 100%;
-  line-height: 1.5rem;
+  line-height: 1.2;
   font-weight: 400;
   font-variant-ligatures: common-ligatures;
   -webkit-backface-visibility: hidden;
@@ -3274,44 +3280,130 @@ html {
       font-size: 18px; } }
   @media (max-width: 767px) {
     html {
-      font-size: 16px; } }
+      font-size: 18px; } }
 
 h1 {
-  font-size: 2rem; }
+  font-family: "Windsor W01", "Playfair Display", Times, serif;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem; }
 
 h2 {
-  font-size: 1.5rem; }
+  font-family: "Windsor W01", "Playfair Display", Times, serif;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  margin-bottom: 1rem; }
 
 h3 {
-  font-size: 1.17rem; }
+  font-family: "Windsor W01", "Playfair Display", Times, serif;
+  font-size: .8rem;
+  margin-bottom: 1rem; }
+  @media (max-width: 1024px) {
+    h3 {
+      font-size: .9rem;
+      line-height: .9rem; } }
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 1rem;
+      line-height: 1rem; } }
 
 h4 {
-  font-size: 1rem; }
+  font-family: "Simplon", "Ubuntu", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase; }
 
 h5 {
-  font-size: 0.83rem; }
+  line-height: 1rem;
+  margin: 0 0 1rem;
+  font-size: .85rem;
+  font-family: "Simplon", "Ubuntu", Arial, sans-serif;
+  text-transform: uppercase; }
+  h5 a {
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #f06eaa; }
+    h5 a:hover {
+      opacity: 0.85 !important; }
+  @media (max-width: 1024px) {
+    h5 {
+      font-size: .75rem;
+      line-height: 1.25rem; }
+      h5 a {
+        font-size: .75rem; } }
+  @media (max-width: 767px) {
+    h5 {
+      font-size: .9rem;
+      line-height: 1.3rem; }
+      h5 a {
+        font-size: .9rem; } }
 
 h6 {
   font-size: 0.75rem; }
 
-p {
-  line-height: 1.5rem;
-  margin: 0 0 1rem 0;
-  font-size: .85rem; }
+blockquote {
+  color: #2B7280;
+  font-style: normal;
+  font-family: "Simplon", "Ubuntu", Arial, sans-serif;
+  font-size: 3rem;
+  position: relative; }
+  blockquote:before {
+    position: absolute;
+    left: -3rem; }
+  blockquote p {
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    color: #191919;
+    font-family: "Simplon", "Ubuntu", Arial, sans-serif;
+    font-style: normal; }
 
-ol, ul {
-  margin-left: 15px;
-  text-align: left; }
-  ol li, ul li {
-    line-height: 1.5rem;
-    margin: 0 0 0.5rem 0;
+a {
+  color: #191919;
+  font-family: "Simplon", "Ubuntu", Arial, sans-serif;
+  line-height: .7rem;
+  font-size: .7rem;
+  text-decoration: none;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  transition: .25s ease-in-out; }
+  @media (max-width: 1024px) {
+    a {
+      font-size: .85rem; } }
+  @media (max-width: 767px) {
+    a {
+      font-size: .9rem; } }
+  a:hover {
+    cursor: pointer;
+    opacity: .8; }
+
+p, span, table, address {
+  line-height: 1.35rem;
+  margin: 0 0 0.5rem 0;
+  font-size: .85rem;
+  font-family: "Simplon", "Ubuntu", Arial, sans-serif; }
+  p a, span a, table a, address a {
     font-size: .85rem; }
+    p a:hover, span a:hover, table a:hover, address a:hover {
+      opacity: 0.85 !important; }
+  @media (max-width: 1024px) {
+    p, span, table, address {
+      font-size: .85rem;
+      line-height: 1.25rem; }
+      p a, span a, table a, address a {
+        font-size: .85rem; } }
+  @media (max-width: 767px) {
+    p, span, table, address {
+      font-size: .9rem;
+      line-height: 1.3rem; }
+      p a, span a, table a, address a {
+        font-size: .9rem; } }
 
-ol {
-  list-style: decimal; }
-
-ul {
-  list-style: disc; }
+p {
+  font-weight: 100; }
 
 strong {
   font-weight: bold; }
@@ -3319,46 +3411,32 @@ strong {
 em {
   font-style: italic; }
 
-a {
-  display: inline-block;
-  position: relative;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1, 1);
-  /*
-	&:after {    
-		background: none repeat scroll 0 0 transparent;
-		bottom: -5px;
-		content: "";
-		display: block;
-		height: 2px;
-		left: 50%;
-		position: absolute;
-		background: black;
-		transition: width 0.3s ease 0s, left 0.3s ease 0s;
-		width: 0;
-	}
-	&:hover:after { 
-		width: 100%; 
-		left: 0; 
-	}
-*/ }
-  a:hover {
-    opacity: .8; }
-
 code, pre, tt {
   font-family: monospace, serif;
   font-size: 1em;
-  overflow-x: scroll;
-  background-color: rgba(0, 0, 0, 0.05);
-  margin: 30px 0;
-  padding: 15px; }
+  margin: 1.5em 0.5em; }
 
 blockquote {
-  font-style: italic; }
+  font-style: normal;
+  font-weight: normal; }
   blockquote:before {
     content: "\201C";
     display: inline-block;
     padding-right: .4em; }
+  blockquote p {
+    font-style: normal;
+    font-weight: normal; }
+  @media (max-width: 1024px) and (orientation: portrait) {
+    blockquote {
+      margin-top: 3rem; }
+      blockquote:before {
+        left: 0;
+        top: -2rem; } }
+
+svg {
+  overflow: visible;
+  transform-box: fill-box;
+  transform-origin: center; }
 
 div#wrapper {
   -moz-transition: 0.6s ease;
@@ -3385,7 +3463,7 @@ section[role=main] {
 .global-announcement {
   z-index: 10000;
   width: 100%;
-  background-color: #231f20;
+  background-color: #191919;
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
   padding: 8px;
@@ -3401,7 +3479,7 @@ header {
   z-index: 1000;
   width: 100%;
   height: 4.5rem;
-  background-color: #231f20;
+  background-color: #191919;
   padding: 0 4rem; }
   header a#logo {
     position: absolute;
@@ -3448,7 +3526,7 @@ header {
             color: #ffffff;
             text-decoration: none;
             font-weight: bold;
-            font-family: "Ubuntu", Arial, sans-serif; }
+            font-family: "Simplon", "Ubuntu", Arial, sans-serif; }
           header nav div > ul > li ul.sub-menu {
             list-style: none;
             position: absolute;
