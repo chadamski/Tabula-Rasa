@@ -25,6 +25,31 @@ add_filter('the_generator', 'remove_version');
 //Featured Image Support
 add_theme_support( 'post-thumbnails' ); 
 
+// GF unrequire
+class gfunrequire {
+    var $_args = null;
+    public function __construct( $args = array() ) { 
+        $this->_args = wp_parse_args( $args, array(
+            'admins_only' => true,
+            'require_query_param' => true
+        ) );
+        add_filter( 'gform_pre_validation', array( $this, 'unrequire_fields' ) );
+    }
+    function unrequire_fields( $form ) {
+        if( $this->_args['admins_only'] && ! current_user_can( 'activate_plugins' ) )
+            return $form;
+        if( $this->_args['require_query_param'] && ! isset( $_GET['gfunrequire'] ) )
+            return $form;
+        foreach( $form['fields'] as &$field ) {
+            $field['isRequired'] = false;
+        }
+        return $form;
+    }    
+}
+#   requires that the user be logged in as an admin and that a 'gfunrequire' parameter be added to the query string
+#   http://youurl.com/your-form-page/?gfunrequire=1
+new GFunrequire();
+
 // custom login Logo
 /*
 function my_custom_login_logo() {
