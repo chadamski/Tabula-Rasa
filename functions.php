@@ -16,6 +16,12 @@ show_admin_bar( false );
 // Add Menu Support
 add_theme_support( 'menus' );
 
+//woocommerce support
+function mytheme_add_woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
 //Remove Version
 function remove_version() {
 return '';
