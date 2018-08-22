@@ -236,7 +236,7 @@ function news_alter_query($query){
 	}
 }
 */
-
+	
 //ACF Pro Options Page
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
